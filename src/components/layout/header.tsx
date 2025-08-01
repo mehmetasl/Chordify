@@ -41,7 +41,7 @@ const useUser = () => {
   return { isLoggedIn, user };
 };
 
-// Logo bileşeni
+// Logo bileşeni TODO: İÇ KULLANICI GÖRECEK SADECE
 const Logo = () => (
   <Link href="/" className="flex items-center gap-2 select-none">
     <Guitar className="h-9 w-9 text-primary drop-shadow" />
@@ -121,6 +121,7 @@ const UserProfile = ({
 }: {
   user: { name: string; email: string; avatarUrl: string };
 }) => (
+  // TODO: BACKENDDEN FOTOĞRAF GELECEK
   <DropdownMenu>
     <DropdownMenuTrigger asChild>
       <Button variant="ghost" className="relative h-12 w-12 rounded-full p-0">
@@ -157,6 +158,7 @@ const UserProfile = ({
 );
 
 // Giriş/Kayıt butonları (desktop)
+// TODO: KAYIT OL EKRANINA TAŞINACAK
 const AuthButtons = () => (
   <div className="hidden md:flex items-center gap-3">
     <Button asChild variant="outline" size="lg" className="font-semibold">
