@@ -24,10 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="tr"> {/* Dil olarak Türkçe belirttim */}
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="tr" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body>
         <div className="relative flex min-h-screen flex-col bg-background">
           <Header /> {/* Header component'ini burada kullan */}
           <main className="flex-1">{children}</main>

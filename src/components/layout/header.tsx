@@ -158,7 +158,6 @@ const UserProfile = ({
 );
 
 // Giriş/Kayıt butonları (desktop)
-// TODO: KAYIT OL EKRANINA TAŞINACAK
 const AuthButtons = () => (
   <div className="hidden md:flex items-center gap-3">
     <Button asChild variant="outline" size="lg" className="font-semibold">
